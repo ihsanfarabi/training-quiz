@@ -104,36 +104,6 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\Register.aspx.designer.vb">
-      <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Register.aspx.vb">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\SignIn.aspx.designer.vb">
-      <DependentUpon>SignIn.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\SignIn.aspx.vb">
-      <DependentUpon>SignIn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Article.aspx.designer.vb">
-      <DependentUpon>Article.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Article.aspx.vb">
-      <DependentUpon>Article.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Code\AuthHelper.vb" />
-    <Compile Include="Code\DBContext.vb" />
-    <Compile Include="Default.aspx.designer.vb">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.vb">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="EditStudent.aspx.designer.vb">
       <DependentUpon>EditStudent.aspx</DependentUpon>
     </Compile>
@@ -143,20 +113,6 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="GridView.aspx.designer.vb">
-      <DependentUpon>GridView.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GridView.aspx.vb">
-      <DependentUpon>GridView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GridViewDetailsPage.aspx.designer.vb">
-      <DependentUpon>GridViewDetailsPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GridViewDetailsPage.aspx.vb">
-      <DependentUpon>GridViewDetailsPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Model\Student.vb" />
     <Compile Include="Model\TrainingContext.vb" />
@@ -174,20 +130,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="Root.master.designer.vb">
-      <DependentUpon>Root.master</DependentUpon>
-    </Compile>
-    <Compile Include="Root.master.vb">
-      <DependentUpon>Root.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Scheduler.aspx.designer.vb">
-      <DependentUpon>Scheduler.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Scheduler.aspx.vb">
-      <DependentUpon>Scheduler.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Students.aspx.designer.vb">
       <DependentUpon>Students.aspx</DependentUpon>
@@ -207,14 +149,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Register.aspx" />
-    <Content Include="Account\SignIn.aspx" />
-    <Content Include="App_Data\ApplicationMenuDataSource.sitemap" />
-    <Content Include="App_Data\Article.html" />
-    <Content Include="App_Data\ArticleContents.xml" />
-    <Content Include="App_Data\Overview.html" />
-    <Content Include="App_Data\OverviewContents.xml" />
-    <Content Include="Article.aspx" />
     <Content Include="Content\Content.css" />
     <Content Include="Content\GridView.css" />
     <Content Include="Content\GridView.js" />
@@ -302,12 +236,8 @@
     <Content Include="Content\Script.js" />
     <Content Include="Content\SignInRegister.css" />
     <Content Include="Content\SignInRegister.js" />
-    <Content Include="Default.aspx" />
     <Content Include="EditStudent.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="GridView.aspx" />
-    <Content Include="GridViewDetailsPage.aspx" />
-    <Content Include="Scheduler.aspx" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -317,7 +247,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <Content Include="Root.master" />
     <Content Include="Students.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

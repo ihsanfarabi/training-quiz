@@ -33,6 +33,7 @@
 
             If Request.QueryString("id") IsNot Nothing Then
                 Dim currentStudent = context.Students.Find(Guid.Parse(Request.QueryString("id")))
+                Dim currentStudentTempName = currentStudent.StudentName
                 currentStudent.StudentName = StudentName.Value
                 currentStudent.IDType = IDType.Value
                 currentStudent.IDNo = IDNo.Value
@@ -41,7 +42,7 @@
                 currentStudent.ContactNo = ContactNo.Value
 
                 Dim existingStudent = context.Students.Where(Function(x) x.StudentName = currentStudent.StudentName).ToList()
-                If existingStudent.Count = 0 Then
+                If existingStudent.Count = 0 Or currentStudentTempName = currentStudent.StudentName Then
                     context.SaveChanges()
                     Session.Clear()
                     Response.Redirect("Students.aspx")
