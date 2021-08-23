@@ -39,9 +39,16 @@
                 currentStudent.Gender = Gender.Value
                 currentStudent.DOB = DOB.Value
                 currentStudent.ContactNo = ContactNo.Value
-                context.SaveChanges()
-                Session.Clear()
-                Response.Redirect("Students.aspx")
+
+                Dim existingStudent = context.Students.Where(Function(x) x.StudentName = currentStudent.StudentName).ToList()
+                If existingStudent.Count = 0 Then
+                    context.SaveChanges()
+                    Session.Clear()
+                    Response.Redirect("Students.aspx")
+                Else
+                    StudentName.IsValid = False
+                    StudentName.ErrorText = "Student name already exist"
+                End If
             Else
                 Dim newStudent As Student = New Student With {
                     .StudentID = Guid.NewGuid(),
